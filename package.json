@@ -1,0 +1,22 @@
+{
+  "name": "esp-monitor",
+  "version": "1.0.0",
+  "description": "Simulasi ESP -> MQTT -> Node.js -> WebSocket -> halaman HTML (diagnosis bearing)",
+  "type": "module",
+  "engines": {
+    "node": ">=18"
+  },
+  "scripts": {
+    "broker": "node dev-broker.js",
+    "start": "node server.js",
+    "sim": "node simulator.js"
+  },
+  "dependencies": {
+    "express": "^5.3.0",
+    "mqtt": "^5.16.1",
+    "ws": "^8.22.1"
+  },
+  "devDependencies": {
+    "aedes": "^1.2.0"
+  }
+}
